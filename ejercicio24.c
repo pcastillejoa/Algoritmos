@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ERROR_MSJ "Error:"
+#define ERROR_MSJ "Error"
 #define DIA_INVALIDO "Ingrese un dia entre 1-366" 
+#define DOM "domingo."
+#define LU "lunes."
+#define MA "martes."
+#define MIE "miercoles."
+#define JUE "jueves."
+#define VIE "viernes."
+#define SAB "sabado."
 
 int main(void)
 {
@@ -10,7 +17,7 @@ int main(void)
     int dia; 
     int modulo;
   
-    printf("Ingrese numero del dia del año\n");
+    printf("%s\n", DIA_INVALIDO);
     scanf("%d",&dia);
           
 	 if (dia<1||dia>=366)
@@ -22,31 +29,31 @@ int main(void)
     switch (modulo)
     {
         case 0:
-        printf("Domingo\n");
+        printf("El dia es %s \n", DOM);
             break;
             
         case 1: 
-        printf("Lunes\n");
+        printf("El dia es %s \n", LU);
             break;
             
         case 2: 
-        printf("Martes\n");
+        printf("El dia es %s \n", MA);
             break;
             
         case 3: 
-        printf("Miercoles\n");
+        printf("El dia es %s \n", MIE);
             break;
             
         case 4: 
-        printf("Jueves\n");
+        printf("El dia es %s \n", JUE);
             break;
             
         case 5: 
-        printf("Viernes\n");
+        printf("El dia es %s \n", VIE);
             break;
             
         case 6: 
-        printf("Sabado\n");
+        printf("El dia es %s \n", SAB);
             break;
                     
         default:
@@ -55,6 +62,8 @@ int main(void)
 }
 return EXIT_FAILURE;
 }
+	
+
 	
 	
 	

@@ -4,7 +4,7 @@
 #define ERROR_MSJ "Error:"
 #define DIA_INVALIDO "Ingrese un dia entre 1-366" 
 
-int main()
+int main(void)
 {
 
     int dia; 

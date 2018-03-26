@@ -57,10 +57,10 @@ int main(void)
             break;
                     
         default:
-        printf("Eror! Ingrese un numero valido.\n");
+        printf("%s: %s\n", ERROR_MSJ, DIA_INVALIDO);
     }
 }
-return EXIT_FAILURE;
+return 0;
 }
 	
 

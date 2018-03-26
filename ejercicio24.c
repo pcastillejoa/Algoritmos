@@ -3,13 +3,13 @@
 
 #define ERROR_MSJ "Error"
 #define DIA_INVALIDO "Ingrese un dia entre 1-366" 
-#define DOM "domingo."
-#define LU "lunes."
-#define MA "martes."
-#define MIE "miercoles."
-#define JUE "jueves."
-#define VIE "viernes."
-#define SAB "sabado."
+#define DOM "El dia es domingo."
+#define LU "El dia es lunes."
+#define MA "El dia es martes."
+#define MIE "El dia es miercoles."
+#define JUE "El dia es jueves."
+#define VIE "El dia es viernes."
+#define SAB "El dia es sabado."
 
 int main(void)
 {
@@ -29,31 +29,31 @@ int main(void)
     switch (modulo)
     {
         case 0:
-        printf("El dia es %s \n", DOM);
+        printf("%s\n", DOM);
             break;
             
         case 1: 
-        printf("El dia es %s \n", LU);
+        printf("%s\n", LU);
             break;
             
         case 2: 
-        printf("El dia es %s \n", MA);
+        printf("%s\n", MA);
             break;
             
         case 3: 
-        printf("El dia es %s \n", MIE);
+        printf("%s\n", MIE);
             break;
             
         case 4: 
-        printf("El dia es %s \n", JUE);
+        printf("%s\n", JUE);
             break;
             
         case 5: 
-        printf("El dia es %s \n", VIE);
+        printf("%s\n", VIE);
             break;
             
         case 6: 
-        printf("El dia es %s \n", SAB);
+        printf("%s\n", SAB);
             break;
                    
     }

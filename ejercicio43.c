@@ -16,7 +16,7 @@
 
 int main (void)
 {
-	
+
 	float rendimiento=0.0, kmrecorridos=0.0, precio=0.0, compra=0.0;
 	float litros=0, distancia=0, promedio=0, menor=10000, mayor=0.0, combustible=0, costo=0, suma=0;
 	int rend=0, numero=0;
@@ -62,9 +62,7 @@ int main (void)
 	
 	printf ("%s %.2f\n", DIST, distancia);
 	
-	
 	printf ("%s %.2f\n", COMB, combustible);
-	
 	
 	printf ("%s %.2f\n", COSTO, costo);
     

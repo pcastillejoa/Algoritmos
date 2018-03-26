@@ -55,9 +55,7 @@ int main(void)
         case 6: 
         printf("El dia es %s \n", SAB);
             break;
-                    
-        default:
-        printf("%s: %s\n", ERROR_MSJ, DIA_INVALIDO);
+                   
     }
 }
 return 0;

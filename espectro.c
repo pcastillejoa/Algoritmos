@@ -7,81 +7,107 @@
 
 
 
-typedef enum {azul, blanco_azulado, blanco, blanco_amarillento, amarillo,
-	 naranja, rojo} espectral_t;
+typedef enum {CLASE_O, CLASE_B, CLASE_A, CLASE_F, CLASE_G, CLASE_K, CLASE_M} espectral_t;
 
 
 int main (void)
 {
 
-   int temp;
+   int temp=1;
  
-   espectral_t espectral;
-   
-   char O=1, B=1, A=1, F=1, G=1, K=1, M=1;
-  
+   espectral_t estrella;
+ 
      printf ("Ingrese la temperatura del cuerpo celeste.\n");
   
      scanf ("%d", &temp);
-  
-    if (temp > 50000) 
+     
+     if (temp>= 28000 && temp<= 50000)
+       
+       estrella = CLASE_O;
+      
+     else if (temp>= 9600 && temp< 28000)
+       
+       estrella = CLASE_B;
+       
+     else if (temp>= 7100 && temp< 9600)
+       
+       estrella = CLASE_A;
+       
+     else if (temp>= 5700 && temp< 7100)
+       
+       estrella = CLASE_F;
+     
+     else if (temp>= 4600 && temp< 5700)
+     
+       estrella = CLASE_G;
+       
+     else if (temp>= 3200 && temp< 4600)
+       
+       estrella = CLASE_K;
+       
+     else if (temp>= 1700 && temp< 3200)
+       
+       estrella = CLASE_M;   
+       
+     else if (temp > 50000) 
      {
      fprintf (stderr, "%s : %s.\n", MSJ_ERR, MSJ_ERR_NUM1); 
       return EXIT_FAILURE;
      } 
      
-     else if (temp <1700) 
+     else 
      {
      fprintf (stderr, "%s : %s.\n", MSJ_ERR, MSJ_ERR_NUM2); 
       return EXIT_FAILURE;
-     }
+     }  
      
-     else if (temp>= 28000 && temp<= 50000)
-       temp = O;
-      
-     else if (temp>= 9600 && temp< 28000)
-       temp = B; 
-       
-     else if (temp>= 7100 && temp< 9600)
-       temp = A; 
-       
-     else if (temp>= 5700 && temp< 7100)
-       temp = F;
-     
-     else if (temp>= 4600 && temp< 5700)
-       temp = G;
-       
-     else if (temp>= 3200 && temp< 4600)
-       temp = K;
-       
-     else if (temp>= 1700 && temp< 3200)
-       temp = M;     
-    
-    switch (temp) 
+
+    switch (estrella) 
       {
-       case 'O': espectral = azul;
+       case CLASE_O: 
+       
+       
+       printf ("Azul.\n");
+       
        break;
        
-       case 'B' : espectral = blanco_azulado;
+       case CLASE_B: 
+       
+       printf ("Blanco azulado.\n");
+       
        break;
        
-       case 'A': espectral = blanco;
+       case CLASE_A: 
+       
+       printf ("Blanco.\n");
+       
        break;
        
-       case 'F': espectral = blanco_amarillento;
+       case CLASE_F: 
+       
+       printf ("Blanco amarillento.\n");
+       
        break;
        
-       case 'G': espectral = amarillo;
+      case CLASE_G: 
+       
+       printf ("Amarillo.\n");
+       
        break;
        
-       case 'K': espectral = naranja;
+       case CLASE_K: 
+       
+       printf ("Naranja.\n");
+       
        break;
        
-       case 'M': espectral = rojo;
+       case CLASE_M: 
+       
+       printf ("Rojo.\n");
+       
        break;
        }
-			   
-      printf ("El color de la estrella es %d\n", espectral);
+	
       
       return 0;
   }  

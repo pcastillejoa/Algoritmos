@@ -9,18 +9,29 @@ int probabilidad_a (void)
 	
     srand(time(NULL));
     
-    a = rand() / RAND_MAX;
-
-    
-    if (0 < a < 0.2)
-    a=0;
-     
-    else if (0.2 < a < 1)
-    a=1;
-    
-    else
-    a=0;
+    a = (float)rand() / RAND_MAX;
     
     return a;
     
+}     
+
+    int main (void)
+{
+    float prob;
+    int res;
+    
+    prob = probabilidad_a ();
+    
+    if (0 < prob < 0.2)
+    res=0;
+     
+    else if (0.2 < prob < 1)
+    res=1;
+ 
+    else 
+    res=0;
+    
+    printf ("%d\n", res);
+
+    return 0;
 }    

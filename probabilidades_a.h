@@ -4,7 +4,7 @@
 
 int num_rand (void)
 {
-	int a;
+	float a;
 	int result;
 	
     srand(time(NULL));
@@ -20,6 +20,6 @@ int num_rand (void)
     else 
       result=0; 
     
-    return a;
+    return result;
     
 }     

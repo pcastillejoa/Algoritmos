@@ -4,21 +4,25 @@
 
 int num_rand (void)
 {
-	float a;
+	float proba;
+	
 	int result;
+	
 	
     srand(time(NULL));
     
-    a = (float)rand() / RAND_MAX;
     
-    if (0 < a && a < 0.2)
-     result=0;
+    proba = (float)rand() / RAND_MAX;
+    
+    
+     if (0 < proba && proba < 0.2)
+       result=0;
      
-    else if (0.2 < a && a < 1)
-      result=1;
- 
-    else 
-      result=0; 
+     else if (0.2 < proba && proba < 1)
+       result=1;
+  
+     else 
+       result=0; 
     
     return result;
     

@@ -4,14 +4,13 @@
 #include "probabilidades_a.h"
 
  
-int main (void)
+    int main (void)
 {
-    int prob;
+    int final;
     
-    prob = num_rand ();
+    final = num_rand ();
  
-    printf ("%d\n", prob);
+    printf ("%d\n", final);
 
     return 0;
 }    
-

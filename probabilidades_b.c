@@ -24,7 +24,7 @@
      return result; 
 }    
 
-int main (void)
+ int main (void)
 {
    int final;
    

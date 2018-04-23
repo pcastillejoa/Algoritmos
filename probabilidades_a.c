@@ -3,21 +3,15 @@
 #include <time.h>
 #include "probabilidades_a.h"
 
- 
-    int main (void)
+ int num_rand (void)
 {
-  
-	float proba;
-	
-	int result;
-	
-	
+    float proba;	
+    int result;
+		
     srand(time(NULL));
-    
-    
+        
     proba = (float)rand() / RAND_MAX;
-    
-    
+        
      if (0 < proba && proba < 0.2)
        result=0;
      
@@ -28,4 +22,17 @@
        result=0; 
     
     return result;
+    
 }    
+
+  int main (void)
+{
+   int final;
+   
+   final = num_rand();
+   
+   printf ("%d\n", final);
+  
+   return 0;
+
+}

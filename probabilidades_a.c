@@ -21,8 +21,7 @@
      else 
        result=0; 
     
-    return result;
-    
+    return result;    
 }    
 
   int main (void)
@@ -32,7 +31,6 @@
    final = num_rand();
    
    printf ("%d\n", final);
-  
+	  
    return 0;
-
 }

@@ -3,18 +3,14 @@
 #include <time.h>
 #include "probabilidades_b.h"
 
-int num_randb (void)
+  int num_randb (void)
 {
-	float proba;
-	
-	int result=0;
-	
+    float proba;
+    int result=0;
 	
     srand(time(NULL));
     
-    
     proba = (float)rand() / RAND_MAX;
-    
     
      if (0 < proba && proba < 0.1)
        result=3;
@@ -25,8 +21,7 @@ int num_randb (void)
      else if (0.55 < proba && proba < 1)
        result=9;
     
-     return result;
-    
+     return result; 
 }    
 
 int main (void)
@@ -38,5 +33,4 @@ int main (void)
    printf ("%d\n", final);
   
    return 0;
-
 }
